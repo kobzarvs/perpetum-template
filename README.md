@@ -8,7 +8,7 @@
 - [`P`atronum](https://github.com/effector/patronum)
 - [`E`SList](https://eslint.org/)
 - [`T`ailwindcss](https://tailwindcss.com/)
-- Patron`um`
+- [Patron`um`](https://github.com/effector/patronum)
 - [TypeScript](https://www.typescriptlang.org/)
 - [JEST](https://jestjs.io/ru/)
 - [testing-library](https://testing-library.com/)
