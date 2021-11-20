@@ -13,6 +13,8 @@
 - [JEST](https://jestjs.io/ru/)
 - [testing-library](https://testing-library.com/)
 
+![screenshot](images/screenshot.png)
+
 ## Getting started
 
 ### Prerequisite
