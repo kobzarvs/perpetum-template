@@ -25,14 +25,10 @@
 
 ### Install && run
 
-Fork or clone git repository:
+![use template](images/use-template.png)
 
 ```shell
-git clone https://github.com/kobzarvs/perpetum-template.git <you-folder>
 cd <you-folder>
-rm -rf .git
-git init
-
 yarn install
 yarn start
 ```
