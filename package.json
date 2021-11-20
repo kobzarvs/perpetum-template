@@ -1,0 +1,57 @@
+{
+  "name": "perpetum-template",
+  "version": "1.0.0",
+  "description": "Template includes parcel, react, effector, tailwind and etc.",
+  "source": "public/index.html",
+  "scripts": {
+    "test": "jest",
+    "build": "parcel build",
+    "start": "parcel serve",
+    "lint": "eslint -c .eslintrc.js --ext .ts --ext .tsx ./src",
+    "clean": "rimraf dist .parcel-cache coverage"
+  },
+  "author": "kobzarvs@gmail.com",
+  "repository": "https://github.com/kobzarvs/perpetum-template",
+  "license": "ISC",
+  "dependencies": {
+    "effector": "^22.1.2",
+    "effector-react": "^22.0.4",
+    "patronum": "^1.6.0-next.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@babel/preset-typescript": "^7.16.0",
+    "@parcel/plugin": "^2.0.0-beta.1",
+    "@parcel/transformer-js": "^2.0.1",
+    "@parcel/transformer-typescript-types": "^2.0.1",
+    "@testing-library/jest-dom": "^5.15.0",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/react-hooks": "^7.0.2",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.0.3",
+    "@types/react": "^17.0.35",
+    "@types/react-dom": "^17.0.11",
+    "@types/webpack-env": "^1.16.3",
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
+    "@typescript-eslint/parser": "^5.4.0",
+    "autoprefixer": "^9",
+    "eslint": "^8.2.0",
+    "eslint-plugin-jest-dom": "^3.9.2",
+    "eslint-plugin-react": "^7.27.1",
+    "eslint-plugin-testing-library": "^5.0.0",
+    "eslist": "^1.0.0-beta.1",
+    "jest": "^27.3.1",
+    "jest-css-modules-transform": "^4.3.0",
+    "parcel": "^2.0.1",
+    "parcel-reporter-static-files-copy": "^1.3.1",
+    "postcss": "^8.3.11",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat",
+    "ts-jest": "^27.0.7",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.2"
+  },
+  "staticFiles": {
+    "staticPath": "static"
+  }
+}

@@ -1,0 +1,21 @@
+@tailwind utilities;
+
+.logo {
+    @apply h-12 rounded place-content-center place-items-center flex;
+    transition: transform 150ms, box-shadow 150ms;
+    width: 220px;
+}
+
+.tailwind-logo {
+    transition: transform 150ms, box-shadow 150ms;
+    @apply py-3;
+    max-width: 220px;
+}
+
+.tailwind-logo:hover,
+.logo:hover {
+    transform: scale(1.02);
+    box-shadow: 4px 4px 12px gray;
+    opacity: .9;
+    cursor: pointer;
+}

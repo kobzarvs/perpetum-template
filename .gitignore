@@ -1,0 +1,6 @@
+.idea
+/coverage/
+node_modules
+yarn-error.log
+.parcel-cache
+dist

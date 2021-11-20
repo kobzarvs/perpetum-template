@@ -1,0 +1,18 @@
+@tailwind utilities;
+
+.select {
+    @apply bg-transparent border-transparent;
+    outline: none;
+}
+
+.select:hover {
+    @apply cursor-pointer bg-blend-overlay;
+}
+
+.Clock {
+    @apply m-2 p-2 w-10/12 max-w-xl
+        flex gap-1 place-content-between
+        overflow-hidden
+        border-2 shadow-lg rounded
+        bg-gradient-to-br from-blue-100;
+}
