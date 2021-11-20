@@ -18,17 +18,17 @@ describe('time', () => {
   test('when clock is started, $time value will be changing by tick event', async () => {
     const scope = fork();
     const [_tick, unwatch] = watch(tick);
-
+    // опускаем директиву await
     allSettled(startClock, {scope});
 
     for (let i = 1; i <= 5; ++i) {
       const prevTime = scope.getState($time);
+      // запускаем таймеры типа setTimeout и мгновенно получаем результат
       await jest.runOnlyPendingTimers();
-
+      // ожидаем что tick.watch i-раз вызовет _tick === jest.fn()
       expect(_tick).toHaveBeenCalledTimes(i);
       expect(scope.getState($time)).not.toBe(prevTime);
     }
-
     unwatch();
   });
 

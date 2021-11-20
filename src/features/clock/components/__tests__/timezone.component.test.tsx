@@ -3,7 +3,7 @@ import {render, screen} from '@testing-library/react';
 import '@testing-library/jest-dom';
 import {TimezoneSelect} from '../timezone-select';
 import userEvent from '@testing-library/user-event';
-import {$timezone} from '../../model/timezone';
+import {$timezone, setTimezone} from '../../model/timezone';
 import {Clock} from '../index';
 
 
@@ -11,12 +11,14 @@ const MOSCOW_OPTION = 'Europe/Moscow';
 const NEW_YORK_OPTION = 'America/New_York';
 const TIMEZONE_COUNT = 347;
 
+
 test('when mounted should be found by testid/label and has valid options', async () => {
-  render(<TimezoneSelect timezone={$timezone.getState()} />);
+  render(<TimezoneSelect timezone={$timezone.getState()} onChange={setTimezone}/>);
 
   expect(await screen.findByTestId('timezone-select')).toBeInTheDocument();
   expect(await screen.findAllByRole('option')).toHaveLength(TIMEZONE_COUNT);
 });
+
 
 test('should be change timezone when select another option', async () => {
   render(<Clock />);

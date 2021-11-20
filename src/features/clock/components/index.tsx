@@ -1,7 +1,7 @@
 import React from 'react';
 import {useStore} from 'effector-react';
-import {$timezone} from '../model/timezone';
-import {$locale, $time} from '../model/time';
+import {$timezone, setTimezone} from '../model/timezone';
+import {$locale, $time, setLocale} from '../model/time';
 import {LocaleSelect} from './locale-select';
 import {TimezoneSelect} from './timezone-select';
 import './styles.css';
@@ -16,8 +16,8 @@ export const Clock = () => {
     <div
       className="Clock">
       <div className="whitespace-nowrap mr-2 font-bold">{time}</div>
-      <TimezoneSelect timezone={timezone} />
-      <LocaleSelect locale={locale} />
+      <TimezoneSelect timezone={timezone} onChange={setTimezone}/>
+      <LocaleSelect locale={locale} onChange={setLocale}/>
     </div>
   );
 };
